@@ -7,3 +7,9 @@ class UserManager:
         user = {"name": name, "type": "user"}
         self.db.save(user)
         return user
+
+    def authenticate_user(self, email, password):
+        """Авторизация пользователя через email."""
+        # Мок авторизации
+        print(f"Пользователь {email} успешно авторизован.")
+        return True
